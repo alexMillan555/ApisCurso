@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apipeliculas\\apipeliculas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apipeliculas\\apipeliculas\\modelos\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\modelos\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apipeliculas\\apipeliculas\\apipeliculas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\apipeliculas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apipeliculas\\apipeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiPeliculas\\appsettings.json",
+              "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\appsettings.json",
+              "RelativeToolTip": "ApiPeliculas\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-18T21:51:45.769Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiPeliculas",
+              "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+              "RelativeDocumentMoniker": "ApiPeliculas\\ApiPeliculas.csproj",
+              "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+              "RelativeToolTip": "ApiPeliculas\\ApiPeliculas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-18T22:49:09.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\Modelos\\Categoria.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Modelos\\Categoria.cs",
+              "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\Modelos\\Categoria.cs",
+              "RelativeToolTip": "ApiPeliculas\\Modelos\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T22:44:36.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\Program.cs",
+              "RelativeDocumentMoniker": "ApiPeliculas\\Program.cs",
+              "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\Program.cs",
+              "RelativeToolTip": "ApiPeliculas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:51:52.407Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
