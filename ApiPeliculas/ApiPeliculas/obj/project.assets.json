@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "projectUniqueName": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
       "projectName": "ApiPeliculas",
-      "projectPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "projectPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
       "packagesPath": "E:\\Usuarios\\110433\\.nuget\\packages\\",
-      "outputPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApiPeliculas\\ApiPeliculas\\obj\\",
+      "outputPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
