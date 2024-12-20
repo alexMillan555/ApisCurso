@@ -71,3 +71,36 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.pdb
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.genruntimeconfig.cache
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ref\ApiPeliculas.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\refint\ApiPeliculas.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.pdb
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\appsettings.Development.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\appsettings.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.exe
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.deps.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.runtimeconfig.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.pdb
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.csproj.AssemblyReference.cache
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.AssemblyInfoInputs.cache
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.AssemblyInfo.cs
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.csproj.CoreCompileInputs.cache
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.MvcApplicationPartsAssemblyInfo.cs
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.MvcApplicationPartsAssemblyInfo.cache
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.sourcelink.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets\msbuild.ApiPeliculas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiPeliculas.props
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiPeliculas.props
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiPeliculas.props
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\scopedcss\bundle\ApiPeliculas.styles.css
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.csproj.CopyComplete
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.genruntimeconfig.cache
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ref\ApiPeliculas.dll

@@ -7,11 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="NewFolder\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Controladores\" />
     <Folder Include="Datos\" />
     <Folder Include="Modelos\Dtos\" />
     <Folder Include="PeliculasMapper\" />
