@@ -4470,23 +4470,23 @@
     ]
   },
   "packageFolders": {
-    "E:\\Usuarios\\110433\\.nuget\\packages\\": {},
-    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "projectUniqueName": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
       "projectName": "ApiPeliculas",
-      "projectPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
-      "packagesPath": "E:\\Usuarios\\110433\\.nuget\\packages\\",
-      "outputPath": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\obj\\",
+      "projectPath": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "E:\\Usuarios\\110433\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4496,8 +4496,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "E:\\Alex\\Librerías NuGet": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -4509,13 +4508,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4559,7 +4552,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
