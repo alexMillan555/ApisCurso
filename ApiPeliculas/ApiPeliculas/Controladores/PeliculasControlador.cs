@@ -57,6 +57,7 @@ namespace ApiPeliculas.Controladores
         }
 
         [HttpPost]
+        [ProducesResponseType(201, Type = typeof(PeliculaDto))]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -86,7 +87,36 @@ namespace ApiPeliculas.Controladores
                 return StatusCode(404, ModelState);
             }
 
-            return CreatedAtRoute("GetPelicula", new { categoriaId = pelicula.Id }, pelicula);
+            return CreatedAtRoute("GetPelicula", new { peliculaId = pelicula.Id }, pelicula);
+
+        }
+
+        [HttpPatch("{PeliculaId:int}", Name = "ActualizarPelicula")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult ActualizarPelicula(int PeliculaId, [FromBody] PeliculaDto peliculaDto)
+        {
+
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            if (peliculaDto == null || PeliculaId != peliculaDto.Id)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var pelicula = _mapper.Map<Pelicula>(peliculaDto);
+
+            if (!_pelRepo.ActualizarPelicula(pelicula))
+            {
+                ModelState.AddModelError("", $"Algo salió mal actualizando el registro: {pelicula.Nombre}"); //El '$' es para ponerle variables y personalizar el msg
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
 
         }
 
