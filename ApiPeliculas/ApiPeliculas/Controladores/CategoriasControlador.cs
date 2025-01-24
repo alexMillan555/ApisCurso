@@ -162,7 +162,6 @@ namespace ApiPeliculas.Controladores
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult BorrarCategoria(int CategoriaId)
         {
-
             
             if (!_ctRepo.ExisteCategoria(CategoriaId))
                 return NotFound();
