@@ -62,6 +62,19 @@
           }
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1583,6 +1596,18 @@
             "rid": "win"
           }
         }
+      },
+      "XAct.Core.PCL/0.0.5014": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/portable-win+net45+sl50+wp80/XAct.Core.PCL.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+sl50+wp80/XAct.Core.PCL.dll": {}
+        }
       }
     }
   },
@@ -1638,6 +1663,20 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "path": "commonservicelocator/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.3.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4459,6 +4498,18 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "XAct.Core.PCL/0.0.5014": {
+      "sha512": "r0rX5Dzr0mfUp8FtVnxXlv5w+cXhz6tHfQ79lf6naLB92J+h2wkGw0q6CfOa2FiveN2ahSflf6LB2G1cOx43AQ==",
+      "type": "package",
+      "path": "xact.core.pcl/0.0.5014",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-win+net45+sl50+wp80/XAct.Core.PCL.dll",
+        "xact.core.pcl.0.0.5014.nupkg.sha512",
+        "xact.core.pcl.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -4466,7 +4517,8 @@
       "AutoMapper >= 13.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.1",
-      "Swashbuckle.AspNetCore >= 7.2.0"
+      "Swashbuckle.AspNetCore >= 7.2.0",
+      "XAct.Core.PCL >= 0.0.5014"
     ]
   },
   "packageFolders": {
@@ -4538,6 +4590,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[7.2.0, )"
+          },
+          "XAct.Core.PCL": {
+            "target": "Package",
+            "version": "[0.0.5014, )"
           }
         },
         "imports": [
@@ -4562,5 +4618,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"CommonServiceLocator 1.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XAct.Core.PCL 0.0.5014\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XAct.Core.PCL",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

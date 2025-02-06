@@ -12,6 +12,6 @@ namespace ApiPeliculas.Repositorio.IRepositorio
         bool ExisteUsuario(string Usuario);
 
         Task<UsuarioLoginRespuestaDto> Login(UsuarioLoginDto usuarioLoginDto);
-        Task<UsuarioDatosDto> Registro(UsuarioRegistroDto usuarioRegistroDto);
+        Task<Usuario> Registro(UsuarioRegistroDto usuarioRegistroDto);
     }
 }

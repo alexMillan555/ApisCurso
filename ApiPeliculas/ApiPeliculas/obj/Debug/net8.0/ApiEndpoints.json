@@ -600,5 +600,152 @@
         "StatusCode": 500
       }
     ]
+  },
+  {
+    "ContainingType": "ApiPeliculas.Controladores.UsuariosControlador",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiPeliculas.Controladores.UsuariosControlador",
+    "Method": "GetUsuario",
+    "RelativePath": "api/usuarios/{UsuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ],
+    "EndpointName": "GetUsuario"
+  },
+  {
+    "ContainingType": "ApiPeliculas.Controladores.UsuariosControlador",
+    "Method": "Login",
+    "RelativePath": "api/usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioLoginDto",
+        "Type": "ApiPeliculas.Modelos.Dtos.UsuarioLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiPeliculas.Controladores.UsuariosControlador",
+    "Method": "Registro",
+    "RelativePath": "api/usuarios/registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioRegistroDto",
+        "Type": "ApiPeliculas.Modelos.Dtos.UsuarioRegistroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   }
 ]

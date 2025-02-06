@@ -11,7 +11,8 @@
           "AutoMapper": "13.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.1",
-          "Swashbuckle.AspNetCore": "7.2.0"
+          "Swashbuckle.AspNetCore": "7.2.0",
+          "XAct.Core.PCL": "0.0.5014"
         },
         "runtime": {
           "ApiPeliculas.dll": {}
@@ -59,6 +60,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.7.0.0",
             "fileVersion": "1.700.22.46903"
+          }
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
           }
         }
       },
@@ -907,6 +916,17 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "XAct.Core.PCL/0.0.5014": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "runtime": {
+          "lib/portable-win+net45+sl50+wp80/XAct.Core.PCL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.5014.0"
+          }
+        }
       }
     }
   },
@@ -936,6 +956,13 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "CommonServiceLocator/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "path": "commonservicelocator/1.3.0",
+      "hashPath": "commonservicelocator.1.3.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1489,6 +1516,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "XAct.Core.PCL/0.0.5014": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r0rX5Dzr0mfUp8FtVnxXlv5w+cXhz6tHfQ79lf6naLB92J+h2wkGw0q6CfOa2FiveN2ahSflf6LB2G1cOx43AQ==",
+      "path": "xact.core.pcl/0.0.5014",
+      "hashPath": "xact.core.pcl.0.0.5014.nupkg.sha512"
     }
   }
 }

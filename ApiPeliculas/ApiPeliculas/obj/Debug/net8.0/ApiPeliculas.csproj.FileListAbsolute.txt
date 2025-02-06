@@ -171,7 +171,7 @@ C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPelicula
 C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.pdb
 C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.genruntimeconfig.cache
 C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ref\ApiPeliculas.dll
-E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\AutoMapper.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\appsettings.Development.json
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\appsettings.json
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\ApiPeliculas.staticwebassets.endpoints.json
@@ -183,6 +183,7 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\AutoMapper.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Azure.Core.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Azure.Identity.dll
+E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.Practices.ServiceLocation.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Humanizer.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -193,6 +194,7 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.Identity.Client.dll
@@ -224,6 +226,7 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\System.Security.Permissions.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\XAct.Core.PCL.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -313,4 +316,3 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.pdb
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.genruntimeconfig.cache
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ref\ApiPeliculas.dll
-C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\AutoMapper.dll
