@@ -316,3 +316,4 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.pdb
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ApiPeliculas.genruntimeconfig.cache
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\obj\Debug\net8.0\ref\ApiPeliculas.dll
+E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

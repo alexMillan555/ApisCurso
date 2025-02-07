@@ -3,6 +3,7 @@ using ApiPeliculas.Modelos;
 using ApiPeliculas.Modelos.Dtos;
 using ApiPeliculas.Repositorio.IRepositorio;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -10,6 +11,7 @@ using System.Net;
 namespace ApiPeliculas.Controladores
 {
     [Route("api/usuarios")]
+    [Authorize(Roles = "Admin")] //SI SE COLOCA ESTA INSTRUCCIÓN A NIVEL DE CLASE, SE PROTEGERÁ TODO EL CONTROLADOR
     [ApiController]
     public class UsuariosControlador : ControllerBase
     {
@@ -62,6 +64,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        [AllowAnonymous]
         [HttpPost("registro")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -93,6 +96,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

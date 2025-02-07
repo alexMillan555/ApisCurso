@@ -2,13 +2,16 @@
 using ApiPeliculas.Modelos.Dtos;
 using ApiPeliculas.Repositorio.IRepositorio;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiPeliculas.Controladores
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")] //Opción estática
+    [Route("api/categorias")] //Opción dinámica
+    [Authorize(Roles = "Admin")] //SI SE COLOCA ESTA INSTRUCCIÓN A NIVEL DE CLASE, SE PROTEGERÁ TODO EL CONTROLADOR. SE PUEDE DEFINIR ROLES
     [ApiController]
     //[EnableCors("PoliticaCors")] //AQUÍ SE PROTEGEN TODOS LOS MÉTODOS CON CORS A NIVEL CONTROLADOR
     public class CategoriasControlador : ControllerBase
@@ -22,6 +25,7 @@ namespace ApiPeliculas.Controladores
             _mapper = mapper;
         }
 
+        [AllowAnonymous]//SI PROTEJO A NIVEL DE CLASE, CON ESTA INSTRUCCIÓN SE ESPECIFICA CUALES QUIERO QUE SEAN PÚBLICOS AL 100%
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -42,6 +46,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        [AllowAnonymous]
         [HttpGet("{CategoriaId:int}", Name = "GetCategoria")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -61,6 +66,8 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        //[Authorize]//SI SE UTILIZA ESTA INSTRUCCIÓN A NIVEL MÉTODO, SOLO SE PROTEGERÁ EL MÉTODO DONDE SE ENCUENTRE ESTA INSTRUCCIÓN
+        //[Authorize(Roles = "Admin")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -95,6 +102,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        //[Authorize(Roles = "Admin")]
         [HttpPatch("{CategoriaId:int}", Name = "ActualizarPatchCategoria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -124,6 +132,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        //[Authorize(Roles = "Admin")]
         [HttpPut("{CategoriaId:int}", Name = "ActualizarPutCategoria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -157,6 +166,7 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        //[Authorize(Roles = "Admin")]
         [HttpDelete("{CategoriaId:int}", Name = "BorrarCategoria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

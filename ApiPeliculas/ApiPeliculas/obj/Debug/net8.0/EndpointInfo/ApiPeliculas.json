@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/CategoriasControlador": {
+    "/api/categorias": {
       "get": {
         "tags": [
           "CategoriasControlador"
@@ -109,7 +109,7 @@
         }
       }
     },
-    "/api/CategoriasControlador/{CategoriaId}": {
+    "/api/categorias/{CategoriaId}": {
       "get": {
         "tags": [
           "CategoriasControlador"
@@ -1374,6 +1374,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Autenticación JWT usando el esquema Bearer. \r\n\r\n Ingresa la palabra 'Bearer' seguida de un [espacio] y despues su token en el campo de abajo \r\n\r\nEjemplo: \"Bearer tkdknkdllskd\"",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
