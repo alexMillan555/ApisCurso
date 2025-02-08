@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\controladores\\usuarioscontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apiscurso\\apipeliculas\\apipeliculas\\controladores\\categoriascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\controladores\\categoriascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apiscurso\\apipeliculas\\apipeliculas\\controladores\\peliculascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\controladores\\peliculascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apiscurso\\apipeliculas\\apipeliculas\\controladores\\categoriascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|solutionrelative:apipeliculas\\controladores\\categoriascontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D498E407-A936-4975-8B00-42843B012254}|ApiPeliculas\\ApiPeliculas.csproj|e:\\alex\\cursos\\udemy\\master api restful asp .net core\\apiscurso\\apipeliculas\\apipeliculas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -94,7 +94,7 @@
               "RelativeDocumentMoniker": "ApiPeliculas\\Program.cs",
               "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Program.cs",
               "RelativeToolTip": "ApiPeliculas\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwDIAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T21:51:52.407Z",
               "IsPinned": true,
@@ -108,14 +108,14 @@
               "RelativeDocumentMoniker": "ApiPeliculas\\Controladores\\UsuariosControlador.cs",
               "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Controladores\\UsuariosControlador.cs",
               "RelativeToolTip": "ApiPeliculas\\Controladores\\UsuariosControlador.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwGIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T19:06:45.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PeliculasControlador.cs",
               "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Controladores\\PeliculasControlador.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Controladores\\PeliculasControlador.cs",
@@ -128,13 +128,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CategoriasControlador.cs",
               "DocumentMoniker": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Controladores\\CategoriasControlador.cs",
               "RelativeDocumentMoniker": "ApiPeliculas\\Controladores\\CategoriasControlador.cs",
               "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Controladores\\CategoriasControlador.cs",
               "RelativeToolTip": "ApiPeliculas\\Controladores\\CategoriasControlador.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwAwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T15:23:21.59Z",
               "EditorCaption": ""
@@ -147,7 +147,7 @@
               "RelativeDocumentMoniker": "ApiPeliculas\\Repositorio\\UsuarioRepositorio.cs",
               "ToolTip": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\Repositorio\\UsuarioRepositorio.cs",
               "RelativeToolTip": "ApiPeliculas\\Repositorio\\UsuarioRepositorio.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAIBJwFQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAIBZwFQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T22:26:45.729Z",
               "EditorCaption": ""

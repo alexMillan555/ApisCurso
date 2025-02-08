@@ -10,6 +10,15 @@
         "tags": [
           "CategoriasControlador"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "403": {
             "description": "Forbidden",
@@ -39,6 +48,15 @@
       "post": {
         "tags": [
           "CategoriasControlador"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -124,6 +142,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -205,6 +230,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -310,6 +342,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -414,6 +453,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -491,6 +537,15 @@
         "tags": [
           "PeliculasControlador"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "403": {
             "description": "Forbidden",
@@ -520,6 +575,15 @@
       "post": {
         "tags": [
           "PeliculasControlador"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -605,6 +669,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -686,6 +757,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -791,6 +869,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -877,6 +962,13 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -921,6 +1013,13 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -957,6 +1056,15 @@
       "get": {
         "tags": [
           "UsuariosControlador"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "403": {
@@ -999,6 +1107,13 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1074,6 +1189,15 @@
         "tags": [
           "UsuariosControlador"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -1127,6 +1251,15 @@
       "post": {
         "tags": [
           "UsuariosControlador"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -1378,7 +1511,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Autenticación JWT usando el esquema Bearer. \r\n\r\n Ingresa la palabra 'Bearer' seguida de un [espacio] y despues su token en el campo de abajo \r\n\r\nEjemplo: \"Bearer tkdknkdllskd\"",
+        "description": "Autenticación JWT usando el esquema Bearer. \r\n\r\nIngresa la palabra 'Bearer' seguido de un [espacio] y después su token en el campo de abajo. \r\n\r\nEjemplo: \"Bearer asfdasfki1234oaks23\"",
         "name": "Authorization",
         "in": "header"
       }

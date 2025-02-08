@@ -26,7 +26,9 @@ namespace ApiPeliculas.Controladores
             this._respuestaAPI = new ();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
+        [ResponseCache(CacheProfileName = "perfil20Segundos")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult GetUsuarios()
@@ -45,7 +47,9 @@ namespace ApiPeliculas.Controladores
 
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("{UsuarioId:int}", Name = "GetUsuario")]
+        [ResponseCache(CacheProfileName = "perfil20Segundos")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

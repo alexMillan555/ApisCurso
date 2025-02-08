@@ -6,7 +6,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
@@ -36,6 +42,11 @@
         "Name": "crearCategoriaDto",
         "Type": "ApiPeliculas.Modelos.Dtos.CrearCategoriaDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -81,6 +92,11 @@
         "Name": "CategoriaId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -136,6 +152,11 @@
         "Name": "categoriaDto",
         "Type": "ApiPeliculas.Modelos.Dtos.CategoriaDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -196,6 +217,11 @@
         "Name": "categoriaDto",
         "Type": "ApiPeliculas.Modelos.Dtos.CategoriaDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -251,6 +277,11 @@
         "Name": "CategoriaId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -301,7 +332,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
@@ -331,6 +368,11 @@
         "Name": "crearPeliculaDto",
         "Type": "ApiPeliculas.Modelos.Dtos.CrearPeliculaDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -376,6 +418,11 @@
         "Name": "PeliculaId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -431,6 +478,11 @@
         "Name": "peliculaDto",
         "Type": "ApiPeliculas.Modelos.Dtos.PeliculaDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -486,6 +538,11 @@
         "Name": "PeliculaId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -541,6 +598,11 @@
         "Name": "nombre",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -577,6 +639,11 @@
         "Name": "CategoriaId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -608,7 +675,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
@@ -638,6 +711,11 @@
         "Name": "UsuarioId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -688,6 +766,11 @@
         "Name": "usuarioLoginDto",
         "Type": "ApiPeliculas.Modelos.Dtos.UsuarioLoginDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -724,6 +807,11 @@
         "Name": "usuarioRegistroDto",
         "Type": "ApiPeliculas.Modelos.Dtos.UsuarioRegistroDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
