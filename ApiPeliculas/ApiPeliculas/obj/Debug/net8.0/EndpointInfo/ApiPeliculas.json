@@ -1,23 +1,63 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "ApiPeliculas",
-    "version": "1.0"
+    "title": "Peliculas Api V1",
+    "description": "API de películas Versión 1",
+    "termsOfService": "https://google.co.uk",
+    "contact": {
+      "name": "Google",
+      "url": "https://google.co.uk"
+    },
+    "license": {
+      "name": "Licencia personal",
+      "url": "https://google.co.uk"
+    },
+    "version": "v1.0"
   },
   "paths": {
-    "/api/categorias": {
+    "/api/v1/categorias/GetString": {
       "get": {
         "tags": [
           "CategoriasControlador"
         ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
             }
           }
+        },
+        "deprecated": true
+      }
+    },
+    "/api/v1/categorias": {
+      "get": {
+        "tags": [
+          "CategoriasControlador"
         ],
         "responses": {
           "403": {
@@ -48,15 +88,6 @@
       "post": {
         "tags": [
           "CategoriasControlador"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -127,7 +158,7 @@
         }
       }
     },
-    "/api/categorias/{CategoriaId}": {
+    "/api/v1/categorias/{CategoriaId}": {
       "get": {
         "tags": [
           "CategoriasControlador"
@@ -141,13 +172,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -230,13 +254,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -342,13 +359,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -453,13 +463,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -532,19 +535,10 @@
         }
       }
     },
-    "/api/peliculas": {
+    "/api/v1/peliculas": {
       "get": {
         "tags": [
           "PeliculasControlador"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "403": {
@@ -575,15 +569,6 @@
       "post": {
         "tags": [
           "PeliculasControlador"
-        ],
-        "parameters": [
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -654,7 +639,7 @@
         }
       }
     },
-    "/api/peliculas/{PeliculaId}": {
+    "/api/v1/peliculas/{PeliculaId}": {
       "get": {
         "tags": [
           "PeliculasControlador"
@@ -668,13 +653,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -757,13 +735,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -869,13 +840,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -948,7 +912,7 @@
         }
       }
     },
-    "/api/peliculas/GetPeliculasEnCategoria/{CategoriaId}": {
+    "/api/v1/peliculas/GetPeliculasEnCategoria/{CategoriaId}": {
       "get": {
         "tags": [
           "PeliculasControlador"
@@ -962,13 +926,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -1001,7 +958,7 @@
         }
       }
     },
-    "/api/peliculas/Buscar": {
+    "/api/v1/peliculas/Buscar": {
       "get": {
         "tags": [
           "PeliculasControlador"
@@ -1013,13 +970,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "api-version",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -1052,15 +1002,16 @@
         }
       }
     },
-    "/api/usuarios": {
+    "/api/v{version}/usuarios": {
       "get": {
         "tags": [
           "UsuariosControlador"
         ],
         "parameters": [
           {
-            "name": "api-version",
-            "in": "query",
+            "name": "version",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -1093,7 +1044,7 @@
         }
       }
     },
-    "/api/usuarios/{UsuarioId}": {
+    "/api/v{version}/usuarios/{UsuarioId}": {
       "get": {
         "tags": [
           "UsuariosControlador"
@@ -1110,8 +1061,9 @@
             }
           },
           {
-            "name": "api-version",
-            "in": "query",
+            "name": "version",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -1184,15 +1136,16 @@
         }
       }
     },
-    "/api/usuarios/registro": {
+    "/api/v{version}/usuarios/registro": {
       "post": {
         "tags": [
           "UsuariosControlador"
         ],
         "parameters": [
           {
-            "name": "api-version",
-            "in": "query",
+            "name": "version",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -1247,15 +1200,16 @@
         }
       }
     },
-    "/api/usuarios/login": {
+    "/api/v{version}/usuarios/login": {
       "post": {
         "tags": [
           "UsuariosControlador"
         ],
         "parameters": [
           {
-            "name": "api-version",
-            "in": "query",
+            "name": "version",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }

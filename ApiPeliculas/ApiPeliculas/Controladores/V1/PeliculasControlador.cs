@@ -1,15 +1,19 @@
 ﻿using ApiPeliculas.Modelos;
 using ApiPeliculas.Modelos.Dtos;
 using ApiPeliculas.Repositorio.IRepositorio;
+using Asp.Versioning;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiPeliculas.Controladores
+namespace ApiPeliculas.Controladores.V1
 {
-    [Route("api/peliculas")]
+    //[Route("api/peliculas")]
+    [Route("api/v{version:apiVersion}/peliculas")] //Opción dinámica
     [ApiController]
+    //SOPORTE VERSIONAMIENTO API A CONTROLADOR: ATRIBUTO DE VERSIÓN A NIVEL CONTROLADOR
+    [ApiVersion("1.0")]
     public class PeliculasControlador : ControllerBase
     {
         private readonly IPeliculaRepositorio _pelRepo;
@@ -165,7 +169,7 @@ namespace ApiPeliculas.Controladores
                 return NotFound();
 
             var itemPelicula = new List<PeliculaDto>();
-            foreach(var pelicula in listaPeliculas)
+            foreach (var pelicula in listaPeliculas)
             {
                 itemPelicula.Add(_mapper.Map<PeliculaDto>(pelicula));
             }
@@ -193,7 +197,7 @@ namespace ApiPeliculas.Controladores
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error recuperando datos de la aplicación");
             }
-            
+
         }
 
     }

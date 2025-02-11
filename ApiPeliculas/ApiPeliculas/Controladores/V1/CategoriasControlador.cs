@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiPeliculas.Controladores
+namespace ApiPeliculas.Controladores.V1
 {
     //[Route("api/[controller]")] //Opción estática
     //SOPORTE PARA CACHÉ A NIVEL CONTROLADOR. SE UTILIZA PARA MEJORAR LA EFICIENCIA DEL SERVIDOR
@@ -19,9 +19,11 @@ namespace ApiPeliculas.Controladores
     [ApiController]
     //[EnableCors("PoliticaCors")] //AQUÍ SE PROTEGEN TODOS LOS MÉTODOS CON CORS A NIVEL CONTROLADOR
     //SOPORTE VERSIONAMIENTO API A CONTROLADOR: ATRIBUTO DE VERSIÓN A NIVEL CONTROLADOR
-    [ApiVersion("1.0")]
-    //SE LE PUEDE ESPECIFICAR VARIAS VERSIONES CON LAS QUE DEBE TRABAJAR
-    [ApiVersion("2.0")]
+    [ApiVersion("1.0")] //DEPRECATED INDICA SI HAY VERSIÓN OBSOLETA DE LA API: , Deprecated = true)
+    ////SE LE PUEDE ESPECIFICAR VARIAS VERSIONES CON LAS QUE DEBE TRABAJAR (NO SE RECOMIENDA TENER VARIAS VERSIONES EN UN CONTROLADOR)
+    ////SE RECOMIENDA ORGANIZAR Y SEPARAR CADA VERSIÓN
+    //[ApiVersion("2.0")]
+    //[Obsolete("Esta versión del controlador está obsoleta")]//TAMBIEN SE PUEDE USAR ESTO -- ESTO A NIVEL DE CONTROLADOR
     public class CategoriasControlador : ControllerBase
     {
         private readonly ICategoriaRepositorio _ctRepo;
@@ -29,14 +31,23 @@ namespace ApiPeliculas.Controladores
 
         public CategoriasControlador(ICategoriaRepositorio ctRepo, IMapper mapper)
         {
-            _ctRepo = ctRepo; 
+            _ctRepo = ctRepo;
             _mapper = mapper;
+        }
+
+        [AllowAnonymous]
+        [HttpGet("GetString")]
+        [Obsolete("Este endpoint del controlador está obsoleto. Por favor, use la 2.0")]//TAMBIEN SE PUEDE USAR ESTO A NIVEL MÉTODO
+        //[MapToApiVersion("2.0")]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "Valor1", "Valor2", "Valor3" };
         }
 
         [AllowAnonymous]//SI PROTEJO A NIVEL DE CLASE, CON ESTA INSTRUCCIÓN SE ESPECIFICA CUALES QUIERO QUE SEAN PÚBLICOS AL 100%
         [HttpGet]
         //ESPECIFICAR VERSIÓN API EN UN MÉTODO
-        [MapToApiVersion("1.0")]
+        //[MapToApiVersion("1.0")]
         //[ResponseCache(Duration = 20)] //SOPORTE CACHÉ A NIVEL DE MÉTODO. NO SE RECOMIENDA USAR DONDE LA INFO. SE ACTUALIZA CONSTANTEMENTE
         [ResponseCache(CacheProfileName = "perfil20Segundos")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -58,13 +69,13 @@ namespace ApiPeliculas.Controladores
 
         }
 
-        [AllowAnonymous]
-        [HttpGet]
-        [MapToApiVersion("2.0")]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "Valor1", "Valor2", "Valor3" };
-        }
+        //[AllowAnonymous]
+        //[HttpGet]
+        //[MapToApiVersion("2.0")]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "Valor1", "Valor2", "Valor3" };
+        //}
 
         [AllowAnonymous]
         [HttpGet("{CategoriaId:int}", Name = "GetCategoria")]
@@ -115,15 +126,15 @@ namespace ApiPeliculas.Controladores
         public IActionResult CrearCategoria([FromBody] CrearCategoriaDto crearCategoriaDto)
         {
 
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest();
 
-            if(crearCategoriaDto == null)
+            if (crearCategoriaDto == null)
             {
                 return BadRequest(ModelState);
             }
 
-            if(_ctRepo.ExisteCategoria(crearCategoriaDto.Nombre))
+            if (_ctRepo.ExisteCategoria(crearCategoriaDto.Nombre))
             {
                 ModelState.AddModelError("", $"La categoría ya existe");
                 return StatusCode(404, ModelState);
@@ -131,7 +142,7 @@ namespace ApiPeliculas.Controladores
 
             var categoria = _mapper.Map<Categoria>(crearCategoriaDto);
 
-            if(!_ctRepo.CrearCategoria(categoria))
+            if (!_ctRepo.CrearCategoria(categoria))
             {
                 ModelState.AddModelError("", $"Algo salió mal guardando el registro: {categoria.Nombre}"); //El '$' es para ponerle variables y personalizar el msg
                 return StatusCode(404, ModelState);
@@ -214,7 +225,7 @@ namespace ApiPeliculas.Controladores
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult BorrarCategoria(int CategoriaId)
         {
-            
+
             if (!_ctRepo.ExisteCategoria(CategoriaId))
                 return NotFound();
 

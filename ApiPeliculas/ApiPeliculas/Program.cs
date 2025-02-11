@@ -56,6 +56,46 @@ builder.Services.AddSwaggerGen(options =>
                     new List<string>()
                 }
             });
+            //SOPORTE PARA DOCUMENTACIÓN SWAGGER
+            options.SwaggerDoc("v1", new OpenApiInfo
+                { 
+                    Version = "v1.0",
+                    Title = "Peliculas Api V1",
+                    Description = "API de películas Versión 1",
+                    TermsOfService = new Uri("https://google.co.uk"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Google",
+                        Url = new Uri("https://google.co.uk")
+                    },
+                    License = new OpenApiLicense//opcional
+                    {
+                        Name = "Licencia personal",
+                        Url = new Uri("https://google.co.uk")
+                    }
+                }
+            
+            );
+            //SOPORTE DOCUMENTACIÓN MÚLTIPLE VERSIÓN API
+            options.SwaggerDoc("v2", new OpenApiInfo
+            {
+                Version = "v2.0",
+                Title = "Peliculas Api V2",
+                Description = "API de películas Versión 2",
+                TermsOfService = new Uri("https://google.co.uk"),
+                Contact = new OpenApiContact
+                {
+                    Name = "Google",
+                    Url = new Uri("https://google.co.uk")
+                },
+                License = new OpenApiLicense//opcional
+                {
+                    Name = "Licencia personal",
+                    Url = new Uri("https://google.co.uk")
+                }
+            }
+
+            );
         }
     );
 
@@ -87,11 +127,11 @@ var apiVersioningBuilder = builder.Services.AddApiVersioning((opcion =>
     opcion.AssumeDefaultVersionWhenUnspecified = true;
     opcion.DefaultApiVersion = new ApiVersion(1, 0);
     opcion.ReportApiVersions = true;
-    opcion.ApiVersionReader = ApiVersionReader.Combine(
-            new QueryStringApiVersionReader("api-version")//?api-version=1.0
-            //new HeaderApiVersionReader("X-Version"), //LEE LA VERSIÓN DESDE EL ENCABEZADO X-VERSION
-            //new MediaTypeApiVersionReader("ver") //LEE DESDE EL TIPO DE MEDIO (MEDIA TYPE) DE LA SOLICITUD
-        );
+    //opcion.ApiVersionReader = ApiVersionReader.Combine(
+    //        new QueryStringApiVersionReader("api-version")//?api-version=1.0
+    //        //new HeaderApiVersionReader("X-Version"), //LEE LA VERSIÓN DESDE EL ENCABEZADO X-VERSION
+    //        //new MediaTypeApiVersionReader("ver") //LEE DESDE EL TIPO DE MEDIO (MEDIA TYPE) DE LA SOLICITUD
+    //    );
 }));
 
 apiVersioningBuilder.AddApiExplorer(
@@ -131,7 +171,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+
+    //SOPORTE PARA DOCUMENTACIÓN DE VERSIÓN EN SWAGGER
+    app.UseSwaggerUI(opciones =>
+    {
+        opciones.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiPeliculasV1");
+        //DOCUMENTACIÓN MÚLTIPLE VERSIÓN
+        opciones.SwaggerEndpoint("/swagger/v2/swagger.json", "ApiPeliculasV2");
+    });
 }
 
 //SOPORTE CORS

@@ -2,6 +2,7 @@
 using ApiPeliculas.Modelos;
 using ApiPeliculas.Modelos.Dtos;
 using ApiPeliculas.Repositorio.IRepositorio;
+using Asp.Versioning;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -10,9 +11,14 @@ using System.Net;
 
 namespace ApiPeliculas.Controladores
 {
-    [Route("api/usuarios")]
+    //[Route("api/usuarios")]
+    [Route("api/v{version:apiVersion}/usuarios")] //Opción dinámica
     [Authorize(Roles = "Admin")] //SI SE COLOCA ESTA INSTRUCCIÓN A NIVEL DE CLASE, SE PROTEGERÁ TODO EL CONTROLADOR
     [ApiController]
+    //[ApiVersion("1.0")]
+    //AQUÍ SE INDICA QUE ESTE CONTROLADOR, UTILIZA LA VERSIÓN NEUTRAL DE LA API, YA QUE HAY PROCESOS QUE NUNCA O CASI NUNCA CAMBIARÁN
+    //ESTO SE HACE PARA QUE SEA INDEPENDIENTE DE CADA VERSIÓN QUE SE LANCE DE LA API
+    [ApiVersionNeutral]
     public class UsuariosControlador : ControllerBase
     {
         private readonly IUsuarioRepositorio _usRepo;
@@ -23,7 +29,7 @@ namespace ApiPeliculas.Controladores
         {
             _usRepo = usRepo;
             _mapper = mapper;
-            this._respuestaAPI = new ();
+            _respuestaAPI = new();
         }
 
         [Authorize(Roles = "Admin")]
@@ -77,7 +83,7 @@ namespace ApiPeliculas.Controladores
         {
 
             bool validarNombreUsuarioUnico = _usRepo.ExisteUsuario(usuarioRegistroDto.NombreUsuario);
-            if(!validarNombreUsuarioUnico)
+            if (!validarNombreUsuarioUnico)
             {
                 _respuestaAPI.CodigoEstado = HttpStatusCode.BadRequest;
                 _respuestaAPI.EsExitosa = false;
@@ -86,7 +92,7 @@ namespace ApiPeliculas.Controladores
             }
 
             var usuario = await _usRepo.Registro(usuarioRegistroDto);
-            if(usuario==null)
+            if (usuario == null)
             {
                 _respuestaAPI.CodigoEstado = HttpStatusCode.BadRequest;
                 _respuestaAPI.EsExitosa = false;
@@ -110,7 +116,7 @@ namespace ApiPeliculas.Controladores
 
             var respuestaLogin = await _usRepo.Login(usuarioLoginDto);
 
-            if (respuestaLogin.Usuario==null || string.IsNullOrEmpty(respuestaLogin.Token))
+            if (respuestaLogin.Usuario == null || string.IsNullOrEmpty(respuestaLogin.Token))
             {
                 _respuestaAPI.CodigoEstado = HttpStatusCode.BadRequest;
                 _respuestaAPI.EsExitosa = false;
