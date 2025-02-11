@@ -98,6 +98,7 @@ apiVersioningBuilder.AddApiExplorer(
         opciones =>
         {
             opciones.GroupNameFormat = "'v'VVV";
+            opciones.SubstituteApiVersionInUrl = true;
         }
     );
 

@@ -321,3 +321,10 @@ E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\Api
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Http.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
 E:\Alex\Cursos\Udemy\Master API RESTful ASP .NET Core\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.Practices.ServiceLocation.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Personal\Cursos\Udemy\Master API Restful ASP NET Core 8\ApisCurso\ApiPeliculas\ApiPeliculas\bin\Debug\net8.0\XAct.Core.PCL.dll
