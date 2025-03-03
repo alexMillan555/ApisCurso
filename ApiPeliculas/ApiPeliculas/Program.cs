@@ -4,6 +4,7 @@ using ApiPeliculas.Repositorio;
 using ApiPeliculas.Repositorio.IRepositorio;
 using Asp.Versioning;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -15,6 +16,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<ContextoAplicacionBD>(opciones =>
         opciones.UseSqlServer(builder.Configuration.GetConnectionString("ConexionSql")));
+
+//SOPORTE PARA LA AUTENTICACIÓN CON.NET IDENTITY
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ContextoAplicacionBD>();
 
 //SOPORTE PARA CACHÉ Y VERSIONAMIENTO
 builder.Services.AddResponseCaching();
