@@ -39,14 +39,14 @@ namespace ApiPeliculas.Repositorio
                 return false;
         }
 
-        public Usuario GetUsuario(int UsuarioId)
+        public AppUsuario GetUsuario(string UsuarioId)
         {
-            return _bd.Usuario.FirstOrDefault(c => c.Id == UsuarioId);
+            return _bd.AppUsuario.FirstOrDefault(c => c.Id == UsuarioId);
         }
 
-        public ICollection<Usuario> GetUsuarios()
+        public ICollection<AppUsuario> GetUsuarios()
         {
-            return _bd.Usuario.OrderBy(c => c.NombreUsuario).ToList();
+            return _bd.AppUsuario.OrderBy(c => c.UserName).ToList();
         }
 
         public async Task<UsuarioLoginRespuestaDto> Login(UsuarioLoginDto usuarioLoginDto)

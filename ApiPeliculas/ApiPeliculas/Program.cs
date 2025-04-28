@@ -1,4 +1,5 @@
 using ApiPeliculas.Datos;
+using ApiPeliculas.Modelos;
 using ApiPeliculas.PeliculasMappers;
 using ApiPeliculas.Repositorio;
 using ApiPeliculas.Repositorio.IRepositorio;
@@ -18,7 +19,8 @@ builder.Services.AddDbContext<ContextoAplicacionBD>(opciones =>
         opciones.UseSqlServer(builder.Configuration.GetConnectionString("ConexionSql")));
 
 //SOPORTE PARA LA AUTENTICACIÓN CON.NET IDENTITY
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ContextoAplicacionBD>();
+//AL PERSONALIZAR EL IDENTITY, SE DEBE AÑADIR EL MÉTODO QUE IMPLMENTA IDENTITY
+builder.Services.AddIdentity<AppUsuario, IdentityRole>().AddEntityFrameworkStores<ContextoAplicacionBD>();
 
 //SOPORTE PARA CACHÉ Y VERSIONAMIENTO
 builder.Services.AddResponseCaching();
@@ -188,6 +190,8 @@ if (app.Environment.IsDevelopment())
 //SOPORTE CORS
 app.UseCors("PoliticaCors");
 
+//SOPORTE PARA ARCHIVOS ESTÁTICOS (COMO POR EJEMPLO, IMÁGENES)
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 //EL USE AUTHENTICATION ES EL SOPORTE PARA AUTENTICACIÓN

@@ -54,13 +54,13 @@ namespace ApiPeliculas.Controladores
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpGet("{UsuarioId:int}", Name = "GetUsuario")]
+        [HttpGet("{UsuarioId}", Name = "GetUsuario")]
         [ResponseCache(CacheProfileName = "perfil20Segundos")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetUsuario(int UsuarioId)
+        public IActionResult GetUsuario(string UsuarioId)
         {
 
             var itemUsuario = _usRepo.GetUsuario(UsuarioId);
@@ -110,6 +110,7 @@ namespace ApiPeliculas.Controladores
         [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Login([FromBody] UsuarioLoginDto usuarioLoginDto)
         {
@@ -127,7 +128,7 @@ namespace ApiPeliculas.Controladores
             _respuestaAPI.CodigoEstado = HttpStatusCode.OK;
             _respuestaAPI.EsExitosa = true;
             _respuestaAPI.Resultado = respuestaLogin;
-            return BadRequest(_respuestaAPI);
+            return Ok(_respuestaAPI);
 
         }
 

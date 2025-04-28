@@ -130,13 +130,16 @@ namespace ApiPeliculas.Migrations
                     b.Property<int>("Duracion")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaCreacion")
+                    b.Property<DateTime?>("FechaCreacion")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RutaImagen")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RutaLocalImagen")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

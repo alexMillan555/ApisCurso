@@ -5,9 +5,9 @@ namespace ApiPeliculas.Repositorio.IRepositorio
 {
     public interface IUsuarioRepositorio
     {
-        ICollection<Usuario> GetUsuarios();
+        ICollection<AppUsuario> GetUsuarios();
 
-        Usuario GetUsuario(int UsuarioId);
+        AppUsuario GetUsuario(string UsuarioId);
 
         bool ExisteUsuario(string Usuario);
 

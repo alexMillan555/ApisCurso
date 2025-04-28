@@ -107,8 +107,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           },
           {
@@ -308,6 +307,9 @@
                 }
               }
             }
+          },
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"

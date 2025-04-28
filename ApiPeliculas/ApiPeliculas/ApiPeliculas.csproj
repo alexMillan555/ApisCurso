@@ -8,13 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\**" />
-    <Compile Remove="NewFolder\**" />
     <Content Remove="Controllers\**" />
-    <Content Remove="NewFolder\**" />
     <EmbeddedResource Remove="Controllers\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
     <None Remove="Controllers\**" />
-    <None Remove="NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +26,10 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
     <PackageReference Include="XAct.Core.PCL" Version="0.0.5014.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ImagenesPeliculas\" />
   </ItemGroup>
 
 </Project>
