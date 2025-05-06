@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "nwQw6SpSwq4YGNlBDUGORYiPaty6WbiKWFiN6dhohD4=",
+  "Source": "ApiPeliculas",
+  "BasePath": "_content/ApiPeliculas",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiPeliculas\\wwwroot",
+      "Source": "ApiPeliculas",
+      "ContentRoot": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\",
+      "BasePath": "_content/ApiPeliculas",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png",
+      "SourceId": "ApiPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\",
+      "BasePath": "_content/ApiPeliculas",
+      "RelativePath": "ImagenesPeliculas/0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagenesPeliculas\\0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png"
+    },
+    {
+      "Identity": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png",
+      "SourceId": "ApiPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\",
+      "BasePath": "_content/ApiPeliculas",
+      "RelativePath": "ImagenesPeliculas/1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png"
+    },
+    {
+      "Identity": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "SourceId": "ApiPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\",
+      "BasePath": "_content/ApiPeliculas",
+      "RelativePath": "ImagenesPeliculas/200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png"
+    }
+  ]
+}

@@ -172,18 +172,32 @@ builder.Services.AddAuthentication(
     });
 
 var app = builder.Build();
+//SOPORTE AZURE
+app.UseSwagger(); //ESTA LÍNEA QUEDA FUERA PARA QUE SIRVA PARA EL ENTORNO DE DESARROLLO Y PRODUCTIVO
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-
+    //ESTO ES EL ENTORNO DE DESARROLLO
     //SOPORTE PARA DOCUMENTACIÓN DE VERSIÓN EN SWAGGER
     app.UseSwaggerUI(opciones =>
     {
         opciones.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiPeliculasV1");
         //DOCUMENTACIÓN MÚLTIPLE VERSIÓN
         opciones.SwaggerEndpoint("/swagger/v2/swagger.json", "ApiPeliculasV2");
+    });
+}
+//SOPORTE AZURE
+else
+{
+    //ESTO SE CONFIGURA PARA PRODUCCIÓN
+    app.UseSwaggerUI(opciones =>
+    {
+        opciones.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiPeliculasV1");
+        //DOCUMENTACIÓN MÚLTIPLE VERSIÓN
+        opciones.SwaggerEndpoint("/swagger/v2/swagger.json", "ApiPeliculasV2");
+        //Azure
+        opciones.RoutePrefix = ""; //Línea para entorno de producción, swaggerUI estará disponible en la raíz del sitio
     });
 }
 

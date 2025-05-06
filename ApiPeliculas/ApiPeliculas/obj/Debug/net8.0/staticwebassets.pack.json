@@ -1,20 +1,16 @@
 {
   "Files": [
     {
-      "Id": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png",
+      "Id": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png",
       "PackagePath": "staticwebassets\\ImagenesPeliculas\\0c2d669fb-2c0e-4712-9e4a-2a6a0ff35c5e.png"
     },
     {
-      "Id": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png",
+      "Id": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png",
       "PackagePath": "staticwebassets\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png"
     },
     {
-      "Id": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "Id": "C:\\Personal\\Cursos\\Udemy\\Master API Restful ASP NET Core 8\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
       "PackagePath": "staticwebassets\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiPeliculas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiPeliculas.Microsoft.AspNetCore.StaticWebAssets.props",

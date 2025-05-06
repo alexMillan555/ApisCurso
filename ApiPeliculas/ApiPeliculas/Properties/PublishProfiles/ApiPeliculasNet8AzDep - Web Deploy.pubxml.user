@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAS7CLrWsmA0eTUQWeyQZSFAAAAAACAAAAAAAQZgAAAAEAACAAAADQzjcOAuf/+kMMAoQ3s9FAKUCe5PCuyqt+B6D23/hVuwAAAAAOgAAAAAIAACAAAAAxzObwx0UmJ6A51Owz/x8DlVT72d5Sw40tYEcpZT3rl4AAAAASqSGCSCsCms+J0+SRr5Lhh2lIIElzcQzrmcUpja9kP3nMdsR2V3KIWV/qDOnSiQ3JyWxsYqf0/kEwvpL5xc9IYTmKINVM0TReQ6UvAB2IY+SYlSEp9k7qjeK/pDksXEMBQ+7yxWotdVX7LJAgl4m05N9Mcklr8RC4ivMZJt6yZUAAAAA2mQMWWSYLit6NAscj6oTxKrlZ32bdP1RgjecS8QoDYivNVTeLqvI4H+cyzWHVNgwF7TnLeIeav4/f3bTodxpZ</EncryptedPassword>
+    <History>True|2025-05-06T16:07:25.4751667Z;True|2025-05-06T09:58:44.0565180-06:00;True|2025-05-06T09:56:39.0184065-06:00;True|2025-05-06T09:48:31.0289782-06:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConexionSql">
+      <Value>Server=tcp:ipnapinetcore.database.windows.net,1433%3bInitial Catalog=ApiPeliculasAz%3bPersist Security Info=False%3bUser ID=alexipn%3bPassword=YM2031jbadld12_%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
