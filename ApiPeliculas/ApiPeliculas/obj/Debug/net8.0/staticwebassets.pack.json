@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png"
     },
     {
+      "Id": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "PackagePath": "staticwebassets\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiPeliculas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

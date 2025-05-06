@@ -540,6 +540,26 @@
         "tags": [
           "PeliculasControlador"
         ],
+        "parameters": [
+          {
+            "name": "numeroPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "tamanioPagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "403": {
             "description": "Forbidden",

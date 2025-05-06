@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9JnFM/4LdNcBaIMDxrx8hwwqyZm+Cn4gnmEtccvQ0iw=",
+  "Hash": "1Hpm+FCIkkNPeX0njvfhDehVJDI2oa10zVXHF9ty98Y=",
   "Source": "ApiPeliculas",
   "BasePath": "_content/ApiPeliculas",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImagenesPeliculas\\1002eaf710d7-afe6-493c-b5a6-5e98599be2eb.png"
+    },
+    {
+      "Identity": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "SourceId": "ApiPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\",
+      "BasePath": "_content/ApiPeliculas",
+      "RelativePath": "ImagenesPeliculas/200267486f9a-0535-45b4-9aa1-915aef9f9aae#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pa9nxj5ms9",
+      "Integrity": "L7RiP8QYci+brjtzm+PJC+D+6H17jEj/HQic5Xk0y8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png"
     }
   ],
   "Endpoints": [
@@ -221,6 +242,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-BYtX2aqJqI0nqJoZGk7uv24oQvGrUem6LmuyRQqBWB0="
+        }
+      ]
+    },
+    {
+      "Route": "ImagenesPeliculas/200267486f9a-0535-45b4-9aa1-915aef9f9aae.pa9nxj5ms9.png",
+      "AssetFile": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4525104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L7RiP8QYci+brjtzm+PJC+D+6H17jEj/HQic5Xk0y8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 19:32:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pa9nxj5ms9"
+        },
+        {
+          "Name": "label",
+          "Value": "ImagenesPeliculas/200267486f9a-0535-45b4-9aa1-915aef9f9aae.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L7RiP8QYci+brjtzm+PJC+D+6H17jEj/HQic5Xk0y8M="
+        }
+      ]
+    },
+    {
+      "Route": "ImagenesPeliculas/200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "AssetFile": "E:\\Alex\\Cursos\\Udemy\\Master API RESTful ASP .NET Core\\ApisCurso\\ApiPeliculas\\ApiPeliculas\\wwwroot\\ImagenesPeliculas\\200267486f9a-0535-45b4-9aa1-915aef9f9aae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4525104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L7RiP8QYci+brjtzm+PJC+D+6H17jEj/HQic5Xk0y8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 19:32:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L7RiP8QYci+brjtzm+PJC+D+6H17jEj/HQic5Xk0y8M="
         }
       ]
     }
